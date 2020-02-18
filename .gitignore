@@ -2,3 +2,4 @@
 output/*
 *.jpg
 *.txt
+!requirements.txt
