@@ -21,10 +21,10 @@ def output_cert(name):
     font = ImageFont.truetype(FONT_TTF_FILE, TEXT_SIZE)
     # draw.text((x, y),"Sample Text",(r,g,b))
     img_width, img_height = img.size
-    text_width, text_height = font.getsize(name)
+    text_width, text_height = font.getsize(name.title())
 
     draw.text((img_width/2 - text_width/2, TEXT_Y_PIXEL),
-              name, (0, 0, 0), font=font)
+              name.title(), (0, 0, 0), font=font)
     img.save(f'output/{name}.jpg')
     print('Generated', name)
 
@@ -36,6 +36,5 @@ if __name__ == "__main__":
         names = f.readlines()
 
     for name in names:
-        name = name.replace("\n", "")
-        name = name.replace("/", "")
+        name = name.replace("\n", "").replace("/", "")
         output_cert(name)
