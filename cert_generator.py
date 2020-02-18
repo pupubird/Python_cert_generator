@@ -10,7 +10,7 @@ NAME_LIST_TXT = "participants_name.txt"
 FONT_TTF_FILE = "Montserrat-SemiBold.ttf"
 
 print(
-    f"0. run: pip install -r requirements.txt\n1. Adjust final arguments (Variables with full uppercase) in cert_generator.py\n2. download font ttf file and place and the same directory\n3. same all target names as {NAME_LIST_TXT}\n4. place template image as {TEMPLATE_IMG}")
+    f"0. run: pip install -r requirements.txt\n1. Adjust final arguments (Variables with full uppercase) in cert_generator.py\n2. download font ttf file and place at the same directory\n3. save all target names as {NAME_LIST_TXT}\n4. place template image as {TEMPLATE_IMG}")
 input("Press enter to start generate.")
 
 
