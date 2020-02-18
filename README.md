@@ -11,5 +11,5 @@ pip install -r requirements.txt
 To start program
 
 ```bash
-python app.py
+python cert_generator.py
 ```
